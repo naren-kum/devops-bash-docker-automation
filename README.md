@@ -33,7 +33,6 @@ Supported actions:
 
 ## Usage
 
-```bash
 chmod +x scripts/manage-environment.sh
 ./scripts/manage-environment.sh
 
