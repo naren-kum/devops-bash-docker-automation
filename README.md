@@ -36,3 +36,50 @@ Supported actions:
 ```bash
 chmod +x scripts/manage-environment.sh
 ./scripts/manage-environment.sh
+
+
+### check-multiple-containers.sh
+
+Checks whether expected Docker containers are running.
+
+## Features
+
+- Checks multiple container names
+- Uses a reusable function
+- Counts running and not-running containers
+- Fails if any expected container is not running
+
+## Usage
+./scripts/check-multiple-containers.sh
+
+
+### backup-config.sh
+
+Creates timestamped backups of a given source folder.
+
+## Features
+
+- Validates input argument
+- Checks source folder exists
+- Creates backups folder if missing
+- Creates timestamped backup directory
+- Copies source folder into backups/
+- Uses safe Bash options and exit codes
+
+## Usage
+
+./scripts/backup-config.sh ./config
+
+### Git Ignore
+
+*.log
+.env
+backups/
+config/
+
+### Release History
+
+Version	Description
+v0.1.0	Added Docker Compose environment manager
+v0.2.0	Added multiple container health check script
+v0.3.0	Added config backup script
